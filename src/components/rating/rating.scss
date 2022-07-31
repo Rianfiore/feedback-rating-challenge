@@ -1,0 +1,29 @@
+@import "src/theme/app.scss";
+
+.rating {
+  display: flex;
+
+  &__star-icon{
+    transition: color 0.2s ease-in-out;
+  
+    &--sad {
+      color: $red-800;
+    }
+  
+    &--neutral {
+      color: $yellow-800;
+    }
+  
+    &--happy {
+      color: $blue-800;
+    }
+  
+    &--very-happy {
+      color: $green-800;
+    }
+  
+    &--disabled{
+      color: $grey-400;
+    }
+  }
+}

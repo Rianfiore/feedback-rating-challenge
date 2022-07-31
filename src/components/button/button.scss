@@ -1,0 +1,39 @@
+@import "src/theme/app.scss";
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color .5s ease-in-out,
+              opacity .5s ease-in-out,
+              transform .15s ease-in-out;
+
+  &:hover{
+    transform: scale(110%);
+
+    &:active {
+      transform: scale(90%);
+    }
+  }
+
+  &--sad {
+    color: $red-800;
+  }
+
+  &--neutral {
+    color: $yellow-800;
+  }
+
+  &--happy {
+    color: $blue-800;
+  }
+  
+  &--very-happy {
+    color: $green-800;
+  }
+
+  &--disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}

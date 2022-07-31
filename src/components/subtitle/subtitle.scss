@@ -1,0 +1,26 @@
+@import "src/theme/app.scss";
+
+.subtitle {
+  transition: color 0.5s ease-in-out;
+  text-align: center;
+
+  &--sad {
+    color: $red-800;
+  }
+
+  &--neutral {
+    color: $yellow-800;
+  }
+
+  &--happy {
+    color: $blue-800;
+  }
+
+  &--very-happy {
+    color: $green-800;
+  }
+  
+  &--disabled{
+    color: $grey-400;
+  }
+}
